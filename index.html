@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cookie Clicker — Replica</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="game">
+    <header>
+      <div id="logo">COOKIE</div>
+      <div id="top-stats">
+        <div id="cookies-display">0 cookies</div>
+        <div id="cps-display">0 CpS</div>
+      </div>
+    </header>
+
+    <main>
+      <section id="left-panel">
+        <div id="cookie-button-wrap">
+          <canvas id="big-cookie" width="256" height="256"></canvas>
+          <div id="click-power">+1</div>
+          <div id="golden-cookie-area"></div>
+        </div>
+
+        <div id="golden-cookie" class="hidden">✨</div>
+        <div id="wrinklers-container"></div>
+      </section>
+
+      <section id="right-panel">
+        <div id="buildings"></div>
+        <div id="upgrades"></div>
+        <div id="tabs">
+          <button data-tab="stats">Stats</button>
+          <button data-tab="legacy">Ascend</button>
+          <button data-tab="save">Save</button>
+        </div>
+        <div id="tab-content">
+          <div id="stats" class="tab-pane"></div>
+          <div id="legacy" class="tab-pane hidden">
+            <h3>Ascension</h3>
+            <div id="heavenly-chips">Heavenly Chips: 0</div>
+            <button id="ascend-btn">Ascend (reset)</button>
+          </div>
+          <div id="save" class="tab-pane hidden">
+            <button id="export-save">Export Save</button>
+            <button id="import-save">Import Save</button>
+            <input type="file" id="import-file" style="display:none"/>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="news-ticker"></div>
+      <div id="sugar-lump">Sugar lump: <span id="sugar-status">Locked</span></div>
+    </footer>
+  </div>
+
+  <!-- scripts split across multiple files -->
+  <script src="lib/ui.js"></script>
+  <script src="lib/buildings.js"></script>
+  <script src="lib/upgrades.js"></script>
+  <script src="lib/save.js"></script>
+  <script src="lib/game.js"></script>
+</body>
+</html>
