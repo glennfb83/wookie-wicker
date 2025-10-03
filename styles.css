@@ -1,0 +1,30 @@
+:root{
+  --bg:#f7e9c6;
+  --panel:#fff7e6;
+  --accent:#c1881a;
+  --muted:#6b6b6b;
+}
+*{box-sizing:border-box;font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif}
+body{margin:0;background:var(--bg);color:#2b2b2b}
+#game{max-width:1100px;margin:14px auto;padding:12px;background:linear-gradient(#fff, #fff8e8);border-radius:10px;box-shadow:0 6px 24px rgba(0,0,0,0.08)}
+header{display:flex;justify-content:space-between;align-items:center;padding:8px 12px}
+#logo{font-weight:900;font-size:28px;letter-spacing:2px;color:var(--accent)}
+#top-stats{display:flex;gap:12px;align-items:center}
+#cookies-display,#cps-display{background:#fff;padding:8px 12px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+main{display:flex;gap:12px;padding:12px}
+#left-panel{flex:1;background:var(--panel);border-radius:10px;padding:16px;display:flex;flex-direction:column;align-items:center}
+#right-panel{width:420px;background:var(--panel);border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:12px}
+#cookie-button-wrap{position:relative}
+#big-cookie{cursor:crosshair;border-radius:50%}
+#click-power{position:absolute;right:8px;bottom:8px;background:rgba(255,255,255,0.9);padding:6px 8px;border-radius:6px;font-weight:700}
+#golden-cookie{position:absolute;top:8px;left:8px;padding:6px 10px;border-radius:6px;background:linear-gradient(#fff7c8,#ffd24d);box-shadow:0 3px 8px rgba(0,0,0,0.2)}
+.hidden{display:none !important}
+#buildings,.upgrade-grid{display:grid;grid-template-columns:1fr;gap:8px;max-height:420px;overflow:auto;padding-right:6px}
+.building{display:flex;align-items:center;gap:8px;background:#fff;padding:8px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04)}
+.building img{width:48px;height:48px;object-fit:cover;border-radius:6px}
+.building .meta{flex:1}
+.upgrade{display:inline-block;background:#fff;padding:8px;margin:6px;border-radius:8px;cursor:pointer}
+#tabs{display:flex;gap:6px}
+#tabs button{flex:1;padding:8px;border-radius:6px;border:0;background:#fff}
+footer{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;margin-top:8px}
+#news-ticker{flex:1}
